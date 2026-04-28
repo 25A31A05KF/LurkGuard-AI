@@ -1,6 +1,6 @@
-🚀LurkGuard-AI  
+##🚀LurkGuard-AI  
 🛡️ AI-Powered Fraud Call Detection System  
-📌 Overview  
+##📌 Overview  
 LurkGuard-AI is an intelligent system designed to detect fraudulent phone calls using advanced AI techniques.
 It analyzes text, audio, and video call recordings to classify them as:  
 ✅ Safe  
