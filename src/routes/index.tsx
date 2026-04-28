@@ -1,26 +1,31 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { LurkGuardApp } from "@/components/LurkGuardApp";
+import { Toaster } from "@/components/ui/sonner";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "LurkGuard-AI · Detect Fraud Calls with Google AI" },
+      {
+        name: "description",
+        content:
+          "LurkGuard-AI uses Google Gemini to transcribe phone calls and instantly classify them as Safe, Suspicious, or Fraud. Built for the Google Solution Challenge.",
+      },
+      { property: "og:title", content: "LurkGuard-AI · AI Call Fraud Detection" },
+      {
+        property: "og:description",
+        content: "Upload a call recording and let Google AI analyze it for fraud in seconds.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <>
+      <LurkGuardApp />
+      <Toaster theme="dark" richColors position="top-center" />
+    </>
+  );
 }
