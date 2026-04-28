@@ -1,25 +1,25 @@
-##🚀LurkGuard-AI  
+# 🚀LurkGuard-AI  
 🛡️ AI-Powered Fraud Call Detection System  
-##📌 Overview  
+# 📌 Overview  
 LurkGuard-AI is an intelligent system designed to detect fraudulent phone calls using advanced AI techniques.
 It analyzes text, audio, and video call recordings to classify them as:  
 ✅ Safe  
 ⚠️ Suspicious  
 🚨 Fraud  
 The system combines Machine Learning, Speech-to-Text, and Cloud Integration to provide real-time, unbiased fraud detection.  
-🔥 Key Features  
+# 🔥 Key Features  
 🎤 Speech-to-Text Integration  
 Converts call recordings (MP3/MP4/WAV) into text using Google Speech API  
-📂 Multi-format File Upload Supports:  
+# 📂 Multi-format File Upload Supports:  
 .mp3  
 .mp4  
 .wav  
-🧠 AI-Based Fraud Detection Uses trained ML model to classify call content  
-☁️ Firebase Integration Stores predictions and call logs in cloud database  
-📱 Modern Mobile-like UI Built using Lovable AI for a smooth, judge-friendly interface  
-⚡ Real-time Analysis Instant prediction after upload  
-🧾 Call Transcript Extraction Full text output from audio/video  
-🏗️ Project Architecture  
+# 🧠 AI-Based Fraud Detection Uses trained ML model to classify call content  
+# ☁️ Firebase Integration Stores predictions and call logs in cloud database  
+# 📱 Modern Mobile-like UI Built using Lovable AI for a smooth, judge-friendly interface  
+# ⚡ Real-time Analysis Instant prediction after upload  
+# 🧾 Call Transcript Extraction Full text output from audio/video  
+# 🏗️ Project Architecture  
   
 User Input (Text / Audio / Video)  
         ↓  
@@ -32,7 +32,7 @@ ML Model Prediction
 Result (Safe / Fraud / Suspicious)  
         ↓  
 Firebase Storage  
-📁 Project Structure  
+# 📁 Project Structure  
   
 LurkGuard-AI/  
 │  
@@ -57,20 +57,20 @@ LurkGuard-AI/
 ├── firebase_key.json       # Firebase credentials  
 ├── requirements.txt  
 └── README.md  
-⚙️ Tech Stack  
+# ⚙️ Tech Stack  
 Frontend: HTML, CSS, JavaScript (Lovable AI Generated UI)  
 Backend: Flask (Python)  
 Machine Learning: Scikit-learn  
 Speech Recognition: Google Cloud Speech-to-Text  
 Cloud Database: Firebase Firestore  
 Audio Processing: MoviePy, Pydub  
-🧠 How It Works  
+# 🧠 How It Works  
 User uploads a call recording or enters text  
 Audio/video is converted into text  
 Text is processed and analyzed  
 ML model predicts fraud probability  
 Result is displayed and stored in Firebase  
-🚀 Installation & Setup  
+# 🚀 Installation & Setup  
 1️⃣ Clone Repository  
 Bash  
 git clone https://github.com/25A31A05KF/LurkGuard-AI.git  
@@ -91,7 +91,7 @@ set GOOGLE_APPLICATION_CREDENTIALS=path_to_your_json
 6️⃣ Run Application  
 Bash  
 python app.py  
-🌐 API Endpoints  
+# 🌐 API Endpoints  
 🔹 Predict from Text  
   
 POST /predict  
@@ -103,7 +103,7 @@ POST /analyze-file
   "text": "Your bank account will be blocked, share OTP",  
   "prediction": "Fraud"  
 }  
-💡 Future Enhancements  
+# 💡 Future Enhancements  
 🎙️ Live call monitoring  
 🌍 Multi-language detection  
 📈 Fraud probability scoring  
